@@ -1,4 +1,12 @@
 # Maven
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'dkkim-devops-service-connection'
+    subscriptionId: 'bcbae5f1-17b2-40ef-bed2-cc0f3fb44c1d'
+    location: 'Korea Central'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
